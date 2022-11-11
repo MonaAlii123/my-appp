@@ -40,17 +40,17 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: " login to dockerhub"
-        run: docker login --username ${{ secrets.DOCKER_USERNAME}} --password ${{ secrets.DOCKER_TOKEN }}
+        run: docker login --username ${{monaalii123}} --password ${{Mona123Monaa}}
 
 
 
       - uses: actions/checkout@v3
 
       - name: " login to dockerhub"
-        run: docker login --username ${{ secrets.DOCKER_USERNAME}} --password ${{ secrets.DOCKER_TOKEN }}
+        run: docker login --username ${{monaalii123}} --password ${{Mona123Monaa }}
       - name: " building docker "
-        run: docker build -t ${{ secrets.DOCKER_USERNAME}}/my-appp
+        run: docker build -t ${{monaalii123}}/my-appp
       - name: " pushing to docker hub "
-        run: docker push ${{ secrets.DOCKER_USERNAME}}/my-appp
+        run: docker push ${{monaalii123}}/my-appp
 
 
